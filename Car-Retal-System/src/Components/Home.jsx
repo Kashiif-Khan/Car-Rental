@@ -36,6 +36,8 @@ import phone from '../assets/phone.png'
 import lastCar from '../assets/lastCar.png'
 import Group2 from '../assets/Group2.png'
 
+import Card from './ReusableComponents/card'
+
 function Home(){
 
     return(
@@ -124,223 +126,14 @@ function Home(){
 
 
 
-        <div className="w-[1440px] h-[1328px] flex flex-col gap-[40px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[72px]">
-            <div className="flex justify-between w-[1296px] h-[118px] opacity-100  mb-[24px]">
+        <div className="w-full h-[1328px] flex flex-col gap-[40px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[72px]">
+            <div className="flex justify-between w-[1296px] h-[118px] opacity-100  mb-[24px] px-24 ">
                 <p class="font-work font-bold text-[50px] leading-[100%] tracking-[0%] text-black w-120 ">Choose the car that suits you</p>
                 <button className='font-work font-bold text-[20px] flex items-center mt-16'>view all <img src={arrowright} alt="arrow right" className='w-6' /></button>
             </div>
-
-           <div className="grid grid-rows-2 grid-cols-3 gap-[24px] w-[1296px] h-[1050px] opacity-100  ">
-                  
-                    {/* Card 1 */}
-                <div className="w-[416px] h-[513px]   ">
-                    <div className=''>
-                        <img src={carimg1} alt="Car 1 card" />
-                    </div>
-                    <div className='flex flex-row justify-between items center px-4'>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px]'>Marcedes</p>
-                            <p className='font-Sans text-[16px]'>sedan</p>
-                        </div>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px] text-[#5937E0]'>$25</p>
-                            <p className='font-Sans text-[16px]'>per day</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-between items-center px-6 py-4'>
-                        <div className='flex flex-row '>
-                            <img src={gearshift} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Automat</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g17} alt="pump" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>PB 15</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g1593} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Air Condition</p>
-                        </div>
-                    </div>
-                    <div className='flex justify-center items-center py-4 px-5'>
-                        <button className='w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 '>View Details</button>
-                    </div>
-                </div>
-                {/* Card 2 */}
-                <div className="w-[416px] h-[513px]  ">
-                                    
-                    <div className=''>
-                        <img src={carimg2} alt="Car 2 card" />
-                    </div>
-                    <div className='flex flex-row justify-between items center px-4'>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px]'>Marcedes</p>
-                            <p className='font-Sans text-[16px]'>sport</p>
-                        </div>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px] text-[#5937E0]'>$50</p>
-                            <p className='font-Sans text-[16px]'>per day</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-between items-center px-6 py-4'>
-                        <div className='flex flex-row '>
-                            <img src={gearshift} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Automat</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g17} alt="pump" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>PB 15</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g1593} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Air Condition</p>
-                        </div>
-                    </div>
-                    <div className='flex justify-center items-center py-4 px-5'>
-                        <button className='w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 '>View Details</button>
-                    </div>
-                </div>
-                {/* Card 3 */}
-                
-                <div className="w-[416px] h-[513px]">
-                                    
-                    <div className=''>
-                        <img src={carimg3} alt="Car 3 card" />
-                    </div>
-                    <div className='flex flex-row justify-between items center px-4'>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px]'>Marcedes</p>
-                            <p className='font-Sans text-[16px]'>sedan</p>
-                        </div>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px] text-[#5937E0]'>$45</p>
-                            <p className='font-Sans text-[16px]'>per day</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-between items-center px-6 py-4'>
-                        <div className='flex flex-row '>
-                            <img src={gearshift} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Automat</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g17} alt="pump" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>PB 15</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g1593} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Air Condition</p>
-                        </div>
-                    </div>
-                    <div className='flex justify-center items-center py-4 px-5'>
-                        <button className='w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 '>View Details</button>
-                    </div>
-                </div>
-                
-                {/* Card 4 */}
-                <div className="w-[416px] h-[513px] ">
-                                   
-                    <div className=''>
-                        <img src={carimg4} alt="Car 4 card" />
-                    </div>
-                    <div className='flex flex-row justify-between items center px-4'>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px]'>Porsche</p>
-                            <p className='font-Sans text-[16px]'>SUV</p>
-                        </div>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px] text-[#5937E0]'>$40</p>
-                            <p className='font-Sans text-[16px]'>per day</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-between items-center px-6 py-4'>
-                        <div className='flex flex-row '>
-                            <img src={gearshift} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Automat</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g17} alt="pump" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>PB 15</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g1593} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Air Condition</p>
-                        </div>
-                    </div>
-                    <div className='flex justify-center items-center py-4 px-5'>
-                        <button className='w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 '>View Details</button>
-                    </div>
-                </div>
-                
-                {/* Card 5 */}
-                <div className="w-[416px] h-[513px]  ">
-                                   
-                    <div className=''>
-                        <img src={carimg5} alt="Car 5 card" />
-                    </div>
-                    <div className='flex flex-row justify-between items center px-4'>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px]'>Toyota</p>
-                            <p className='font-Sans text-[16px]'>sedan</p>
-                        </div>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px] text-[#5937E0]'>$35</p>
-                            <p className='font-Sans text-[16px]'>per day</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-between items-center px-6 py-4'>
-                        <div className='flex flex-row '>
-                            <img src={gearshift} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Automat</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g17} alt="pump" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>PB 15</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g1593} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Air Condition</p>
-                        </div>
-                    </div>
-                    <div className='flex justify-center items-center py-4 px-5'>
-                        <button className='w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 '>View Details</button>
-                    </div>
-                </div>
-                
-                {/* Card 6 */}
-                <div className="w-[416px] h-[513px] ">
-                                    
-                    <div className=''>
-                        <img src={carimg6} alt="Car 6 card" />
-                    </div>
-                    <div className='flex flex-row justify-between items center px-4'>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px]'>Porsche</p>
-                            <p className='font-Sans text-[16px]'>SUV</p>
-                        </div>
-                        <div>
-                            <p className='font-Sans font-semibold text-[24px] text-[#5937E0]'>$50</p>
-                            <p className='font-Sans text-[16px]'>per day</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-between items-center px-6 py-4'>
-                        <div className='flex flex-row '>
-                            <img src={gearshift} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Automat</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g17} alt="pump" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>PB 15</p>
-                        </div>
-                        <div className='flex flex-row '>
-                            <img src={g1593} alt="gear" className='w-6'/>
-                            <p className='font-Sans text-[16px]'>Air Condition</p>
-                        </div>
-                    </div>
-                    <div className='flex justify-center items-center py-4 px-5'>
-                        <button className='w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 '>View Details</button>
-                    </div>
-                </div>
-                </div>
-            </div>
+            
+            <Card/>
+        </div>
 
             <div className='w-full h-[535px]  flex justify-center items-center'>
                 <div className='relative w-[1296px] h-[415px] bg-[#5937E0] rounded overflow-hidden '>
