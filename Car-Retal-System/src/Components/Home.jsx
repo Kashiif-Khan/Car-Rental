@@ -3,6 +3,7 @@ import blurCar from '../assets/blurCar.png'
 import car from '../assets/car.png'
 import g3453 from '../assets/g3453.png'
 import wallet from '../assets/wallet.png'
+import Footer from './ReusableComponents/Footer'
 function Home(){
     console.log(blurCar)
     return(
@@ -42,7 +43,7 @@ function Home(){
                 </p>
             </div>
         </div>
-
+        <Footer/>
         </>
     )
 }
