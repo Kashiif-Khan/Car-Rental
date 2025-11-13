@@ -5,7 +5,7 @@ function Header(){
     return(
         <>
        
-        <nav className="flex  w-full h-26 justify-between py-7 px-16 opacity-100 rotate-0">
+        <nav className="flex  w-full h-26 justify-between py-7 px-30 opacity-100 rotate-0">
             <div className='flex flex-row gap-5  justify-center items-center h-12 w-45 '>
             <img src={Vector} alt="logo" className='w-11 h-7 top-2 left-1 opacity-100 rotate-0'  />
             <h3 className='w-20 h-5 font-inter font-bold text-base leading-[100%] tracking-normal left- '>Car Rental</h3>

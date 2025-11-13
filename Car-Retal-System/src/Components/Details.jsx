@@ -21,7 +21,7 @@ function Details(){
     return(
         <>
         
-        <div className="w-full h-[880px] border border-red-500 flex flex-row justify-center pt-6 gap-2 ">
+        <div className="w-full h-[880px] border border-red-500 flex flex-row justify-center pt-6 gap-24 ">
             <div className="w-[636px] h-[557px] border border-green-300">
                 <div className="w-[636px] h-[437px]">
                     <div className='p-2'>
@@ -86,11 +86,14 @@ function Details(){
                 </div>
             </div>
         </div>
-        <div className="flex justify-between w-[1296px] h-[118px] opacity-100  mb-[24px] px-24 ">
+        <div className='w-full justify-center items-center px-34'>
+            <div className="flex justify-between w-[1296px] h-[118px] opacity-100  mb-[24px] px-24 ">
             <p class="font-work font-bold text-[50px] leading-[100%] tracking-[0%] text-black w-120 ">Other cars</p>
             <button className='font-work font-bold text-[20px] flex items-center mt-16'>view all <img src={arrowright} alt="arrow right" className='w-6' /></button>
-         </div>
-        <Card/>
+            </div>
+           <Card/>
+
+        </div>
         </>
     )
 }

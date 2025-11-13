@@ -42,7 +42,9 @@ function Home(){
 
     return(
         <>
-        <div className='relative z-0  w-full max-w-[1420px] h-[590px]   ml-16  bg-[#5937E0] overflow-hidden '>
+        {/* Hero Section */}
+        <div className='w-full h-[660px] flex justify-center items-center'>
+                    <div className='relative z-0  w-[1460px]  h-[660px]   ml-16  bg-[#5937E0] overflow-hidden rounded'>
             
             <img src={Group} alt="Group"  className='absloute  left-0 top-0 z-20 w-355 '/>
             <img src={blurCar} alt="Car logo" className='absolute z-10 w-[550px] top-[400px] left-[684px] -translate-x-1/2 -translate-y-1/2 rounded'  />
@@ -54,7 +56,11 @@ function Home(){
             </div>
             
         </div>
-        <div className="flex flex-row w-[1440px] h-[314px] flex justify-between ml-10 p-[60px_72px_60px_72px] opacity-100">
+        </div>
+
+        {/* 2nd section  */}
+        <div className='flex justify-center items-center'>
+                    <div className="flex flex-row w-[1440px] h-[314px] flex justify-between ml-10 p-[60px_72px_60px_72px] opacity-100">
             <div className="w-[357px] h-[194px] opacity-100  flex flex-col justify-center items-center gap-5">
                 <img src={g3453} alt="Location" className='w-[60px] h-[60px]' />
                 <p className="font-work font-semibold text-[24px] leading-[100%] tracking-[0%] text-center">Avalibality</p>
@@ -77,7 +83,11 @@ function Home(){
                 </p>
             </div>
         </div>
-        <div className="w-[1440px] h-[669px] flex gap-[110px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[158px]">
+        </div>
+
+        {/* 3rd section */}
+        <div className='flex justify-center items-center'>
+            <div className="w-[1440px] h-[669px] flex gap-[110px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[158px]">
             <div className='w-[550px] h-[449px]'>
                 <img src={mycar} alt="my car" />
             </div>
@@ -124,17 +134,21 @@ function Home(){
 
         </div>
 
+        </div>
 
 
-        <div className="w-full h-[1328px] flex flex-col gap-[40px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[72px]">
+        {/* 4 section */}
+         
+            <div className="w-full h-[1328px] flex justify-center items-center flex-col gap-[40px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[72px]">
             <div className="flex justify-between w-[1296px] h-[118px] opacity-100  mb-[24px] px-24 ">
                 <p class="font-work font-bold text-[50px] leading-[100%] tracking-[0%] text-black w-120 ">Choose the car that suits you</p>
                 <button className='font-work font-bold text-[20px] flex items-center mt-16'>view all <img src={arrowright} alt="arrow right" className='w-6' /></button>
             </div>
             
             <Card/>
-        </div>
-
+          </div>
+        
+            {/* 5 section */}
             <div className='w-full h-[535px]  flex justify-center items-center'>
                 <div className='relative w-[1296px] h-[415px] bg-[#5937E0] rounded overflow-hidden '>
                     <img src={Group1} alt="group 1" className='absolute w-165  z-10' />
@@ -185,34 +199,37 @@ function Home(){
 
             </div>
             
-            <div className='w-full h-[630px]  flex flex-row justify-between px-30'>
-                <div className=' '>
-                    <div className='mt-20'>
-                        <p className='font-Sans font-bold text-[50px] w-[313px] h-[118px]'>Download mobile app</p>
-                        <p className='font-Sans font-semibold text-[16px] w-[530px] h-[100px] mt-14 '>Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor cursus turpis nibh placerat massa. Fermentum urna ut at et in. Turpis aliquet cras hendrerit enim condimentum. Condimentum interdum risus bibendum urna</p>
-                    </div>  
-                    <div className='w-[386px] h-[50px] flex flex-row justify-between items-center mt-14'>
-                        <button className='bg-black w-[173px] h-[50] flex flex-row p-2 rounded'>
-                             <img src={iStore} alt="apple logo" className='w-6 h-8' />
-                             <p className='text-white flex flex-col'> <span className='w-[99px] h-2 text-[10px]'>download on the</span>  <span className='w-[108px] h-[23px]'>App Store</span> </p>
-                        </button>
-                        <button className='bg-black w-[173px] h-[50] flex flex-row p-2 rounded'>
-                             <img src={googleStore} alt="google play" className='w-6 h-8' /> 
-                             <p className='text-white flex flex-col'> <span className='w-[99px] h-2 text-[10px] '>GIT IT ON</span>  <span className='w-[108px] h-[23px]'> Google Play</span> </p>
-                        </button>
-                    </div>  
-                    
-                 </div>
+            {/* 6 section */}
+                <div className='flex justify-center items-center'>
+                   <div className='w-full h-[630px]  flex flex-row justify-center items-center gap-60'>
+                        <div className='w-[563px] h-[368px] '>
+                            <div className='mt-20'>
+                                <p className='font-Sans font-bold text-[50px] w-[313px] h-[118px]'>Download mobile app</p>
+                                <p className='font-Sans font-semibold text-[16px] w-[530px] h-[100px] mt-14 '>Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor cursus turpis nibh placerat massa. Fermentum urna ut at et in. Turpis aliquet cras hendrerit enim condimentum. Condimentum interdum risus bibendum urna</p>
+                            </div>  
+                            <div className='w-[386px] h-[50px] flex flex-row justify-between items-center mt-14'>
+                                <button className='bg-black w-[173px] h-[50] flex flex-row p-2 rounded'>
+                                    <img src={iStore} alt="apple logo" className='w-6 h-8' />
+                                    <p className='text-white flex flex-col'> <span className='w-[99px] h-2 text-[10px]'>download on the</span>  <span className='w-[108px] h-[23px]'>App Store</span> </p>
+                                </button>
+                                <button className='bg-black w-[173px] h-[50] flex flex-row p-2 rounded'>
+                                    <img src={googleStore} alt="google play" className='w-6 h-8' /> 
+                                    <p className='text-white flex flex-col'> <span className='w-[99px] h-2 text-[10px] '>GIT IT ON</span>  <span className='w-[108px] h-[23px]'> Google Play</span> </p>
+                                </button>
+                            </div>  
+                            
+                        </div>
 
-                 <div className=' relative w-[427px] h-[577px]  '>
-                    <img src={phone} alt="phone 1" className='absolute w-[267px] h-[540px] top-[70px]'/>
-                    <img src={phone} alt="phone 2" className='absolute w-[267px] h-[540px] left-[50px]'/>
-                    
+                        <div className=' relative w-[427px] h-[577px]  '>
+                            <img src={phone} alt="phone 1" className='absolute w-[267px] h-[540px] top-[70px]'/>
+                            <img src={phone} alt="phone 2" className='absolute w-[267px] h-[540px] left-[50px]'/>
+                            
 
-                 </div>
+                        </div>
 
-            </div>
-
+                    </div>
+                </div>
+            {/* 7 section */}
             <div className='w-full h-[535px] flex justify-center items-center'>
                 <div className='relative w-[1296px] h-[415px] rounded bg-[#5937E0] '>
                     <img src={Group2} alt="group 2" className='absolute w-[800px] h-[148px] top-20 ' />
