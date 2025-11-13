@@ -83,6 +83,7 @@ function Home(){
                 </p>
             </div>
         </div>
+
         </div>
 
         {/* 3rd section */}
@@ -258,7 +259,7 @@ function Home(){
 
 
 
-        </>
+    </>
     )
 }
 export default Home
