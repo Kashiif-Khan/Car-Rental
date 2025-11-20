@@ -1,12 +1,5 @@
-import Footer from "./ReusableComponents/Footer";
-import Toyota from "../assets/Vehicallogo/Toyota.png";
-import Ford from "../assets/Vehicallogo/Ford.png";
-import Mercedes from "../assets/Vehicallogo/Mercedes.png";
-import Jeep from "../assets/Vehicallogo/Jeep.png";
-import BMW from "../assets/Vehicallogo/BMW.png";
-import Audi from "../assets/Vehicallogo/Audi.png";
 import Card from "./ReusableComponents/card";
-import logocomp from "./ReusableComponents/logocomp";
+import Logocomp from "./ReusableComponents/Logocomp";
 
 function Vehicles() {
   return (
@@ -19,34 +12,36 @@ function Vehicles() {
             Select a Vehicle Group
           </h1>
         </div>
-
-        {/* button Div */}
-        <div className="flex flex-wrap justify-center gap-4 mt-6">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-200">
-            All Vehicles
-          </button>
-          <button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-transform duration-200">
-            Sedan
-          </button>
-          <button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-transform duration-200">
-            Cabriolet
-          </button>
-          <button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-transform duration-200">
-            Pickup
-          </button>
-          <button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-transform duration-200">
-            SUV
-          </button>
-          <button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-transform duration-200">
-            Minivan
-          </button>
+        {/* Button Section */}
+        <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 mt-8 px-4">
+          {[
+            "All Vehicles",
+            "Sedan",
+            "Cabriolet",
+            "Pickup",
+            "SUV",
+            "Minivan",
+          ].map((label, i) => (
+            <button
+              key={i}
+              className={`px-6 py-2 rounded-full font-medium shadow-md transition-all duration-300
+        ${
+          i === 0
+            ? "bg-[#5937E0] text-white hover:bg-[#472fc0]"
+            : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+        } hover:scale-105`}
+            >
+              {label}
+            </button>
+          ))}
         </div>
+
         {/* Cards Section */}
         <Card />
 
         {/* Logos Section */}
-        <logocomp />
-          {/* <div className="flex justify-center items-center py-10 px-4 mt-10 bg-gray-100">
+        <Logocomp />
+        {/* <div className="flex justify-center items-center py-10 px-4 mt-10 bg-gray-100">
             <div className="bg-white shadow-md rounded-full px-10 py-6 flex flex-wrap justify-center items-center gap-12 w-fit">
               {[Toyota, Ford, Mercedes, Jeep, BMW, Audi].map((logo, i) => (
                 <img
@@ -58,7 +53,7 @@ function Vehicles() {
               ))}
             </div>
           </div> */}
-      </div>    
+      </div>
     </>
   );
 }

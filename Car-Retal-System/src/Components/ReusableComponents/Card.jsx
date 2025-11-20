@@ -8,238 +8,69 @@ import carimg6 from "../../assets/carimg6.png";
 import g17 from "../../assets/g17.png";
 import g1593 from "../../assets/g1593.png";
 import gearshift from "../../assets/gearshift.png";
+
 function Card() {
+  const cars = [
+    { img: carimg1, name: "Mercedes", type: "Sedan", price: 25 },
+    { img: carimg2, name: "Mercedes", type: "Sport", price: 50 },
+    { img: carimg3, name: "Mercedes", type: "Sedan", price: 45 },
+    { img: carimg4, name: "Porsche", type: "SUV", price: 40 },
+    { img: carimg5, name: "Toyota", type: "Sedan", price: 35 },
+    { img: carimg6, name: "Porsche", type: "SUV", price: 50 },
+  ];
+
   return (
-    <>
-      <div className="grid grid-rows-2 grid-cols-3 gap-[24px] w-[1296px] h-[1050px]  px-14 ">
-        {/* Card 1 */}
-        <div className="w-[416px] h-[513px]   ">
-          <div className="">
-            <img src={carimg1} alt="Car 1 card" />
-          </div>
-          <div className="flex flex-row justify-between items center px-4">
-            <div>
-              <p className="font-Sans font-semibold text-[24px]">Marcedes</p>
-              <p className="font-Sans text-[16px]">sedan</p>
-            </div>
-            <div>
-              <p className="font-Sans font-semibold text-[24px] text-[#5937E0]">
-                $25
-              </p>
-              <p className="font-Sans text-[16px]">per day</p>
-            </div>
-          </div>
-          <div className="flex flex-row justify-between items-center px-6 py-4">
-            <div className="flex flex-row ">
-              <img src={gearshift} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Automat</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g17} alt="pump" className="w-6" />
-              <p className="font-Sans text-[16px]">PB 15</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g1593} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Air Condition</p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center py-4 px-5">
-            <button className="w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 ">
-              View Details
-            </button>
-          </div>
-        </div>
-        {/* Card 2 */}
-        <div className="w-[416px] h-[513px]  ">
-          <div className="">
-            <img src={carimg2} alt="Car 2 card" />
-          </div>
-          <div className="flex flex-row justify-between items center px-4">
-            <div>
-              <p className="font-Sans font-semibold text-[24px]">Marcedes</p>
-              <p className="font-Sans text-[16px]">sport</p>
-            </div>
-            <div>
-              <p className="font-Sans font-semibold text-[24px] text-[#5937E0]">
-                $50
-              </p>
-              <p className="font-Sans text-[16px]">per day</p>
-            </div>
-          </div>
-          <div className="flex flex-row justify-between items-center px-6 py-4">
-            <div className="flex flex-row ">
-              <img src={gearshift} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Automat</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g17} alt="pump" className="w-6" />
-              <p className="font-Sans text-[16px]">PB 15</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g1593} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Air Condition</p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center py-4 px-5">
-            <button className="w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 ">
-              View Details
-            </button>
-          </div>
-        </div>
-        {/* Card 3 */}
+    <section className="px-4 sm:px-8 md:px-14 py-10 bg-gray-50">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        {cars.map((car, i) => (
+          <div
+            key={i}
+            className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-2 cursor-pointer"
+          >
+            {/* Image */}
+            <img src={car.img} alt={car.name} className="w-full h-56 object-cover" />
 
-        <div className="w-[416px] h-[513px]">
-          <div className="">
-            <img src={carimg3} alt="Car 3 card" />
-          </div>
-          <div className="flex flex-row justify-between items center px-4">
-            <div>
-              <p className="font-Sans font-semibold text-[24px]">Marcedes</p>
-              <p className="font-Sans text-[16px]">sedan</p>
-            </div>
-            <div>
-              <p className="font-Sans font-semibold text-[24px] text-[#5937E0]">
-                $45
-              </p>
-              <p className="font-Sans text-[16px]">per day</p>
-            </div>
-          </div>
-          <div className="flex flex-row justify-between items-center px-6 py-4">
-            <div className="flex flex-row ">
-              <img src={gearshift} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Automat</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g17} alt="pump" className="w-6" />
-              <p className="font-Sans text-[16px]">PB 15</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g1593} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Air Condition</p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center py-4 px-5">
-            <button className="w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 ">
-              View Details
-            </button>
-          </div>
-        </div>
+            {/* Info Section */}
+            <div className="p-4">
+              <div className="flex justify-between items-center mb-2">
+                <div>
+                  <p className="font-semibold text-xl">{car.name}</p>
+                  <p className="text-gray-500">{car.type}</p>
+                </div>
+                <div className="text-right">
+                  <p className="font-semibold text-xl text-[#5937E0]">${car.price}</p>
+                  <p className="text-gray-500 text-sm">per day</p>
+                </div>
+              </div>
 
-        {/* Card 4 */}
-        <div className="w-[416px] h-[513px] ">
-          <div className="">
-            <img src={carimg4} alt="Car 4 card" />
-          </div>
-          <div className="flex flex-row justify-between items center px-4">
-            <div>
-              <p className="font-Sans font-semibold text-[24px]">Porsche</p>
-              <p className="font-Sans text-[16px]">SUV</p>
-            </div>
-            <div>
-              <p className="font-Sans font-semibold text-[24px] text-[#5937E0]">
-                $40
-              </p>
-              <p className="font-Sans text-[16px]">per day</p>
-            </div>
-          </div>
-          <div className="flex flex-row justify-between items-center px-6 py-4">
-            <div className="flex flex-row ">
-              <img src={gearshift} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Automat</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g17} alt="pump" className="w-6" />
-              <p className="font-Sans text-[16px]">PB 15</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g1593} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Air Condition</p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center py-4 px-5">
-            <button className="w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 ">
-              View Details
-            </button>
-          </div>
-        </div>
+              {/* Features */}
+              <div className="flex justify-between items-center text-gray-600 py-3 border-t border-gray-200">
+                <div className="flex items-center gap-1">
+                  <img src={gearshift} alt="gear" className="w-5" />
+                  <p className="text-sm">Automatic</p>
+                </div>
+                <div className="flex items-center gap-1">
+                  <img src={g17} alt="fuel" className="w-5" />
+                  <p className="text-sm">PB 15</p>
+                </div>
+                <div className="flex items-center gap-1">
+                  <img src={g1593} alt="ac" className="w-5" />
+                  <p className="text-sm">A/C</p>
+                </div>
+              </div>
 
-        {/* Card 5 */}
-        <div className="w-[416px] h-[513px]  ">
-          <div className="">
-            <img src={carimg5} alt="Car 5 card" />
-          </div>
-          <div className="flex flex-row justify-between items center px-4">
-            <div>
-              <p className="font-Sans font-semibold text-[24px]">Toyota</p>
-              <p className="font-Sans text-[16px]">sedan</p>
-            </div>
-            <div>
-              <p className="font-Sans font-semibold text-[24px] text-[#5937E0]">
-                $35
-              </p>
-              <p className="font-Sans text-[16px]">per day</p>
+              {/* Button */}
+              <div className="flex justify-center mt-4">
+                <button className="w-full bg-[#5937E0] hover:bg-[#472fc0] text-white font-semibold py-2 rounded-md transition-colors duration-300">
+                  View Details
+                </button>
+              </div>
             </div>
           </div>
-          <div className="flex flex-row justify-between items-center px-6 py-4">
-            <div className="flex flex-row ">
-              <img src={gearshift} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Automat</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g17} alt="pump" className="w-6" />
-              <p className="font-Sans text-[16px]">PB 15</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g1593} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Air Condition</p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center py-4 px-5">
-            <button className="w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 ">
-              View Details
-            </button>
-          </div>
-        </div>
-
-        {/* Card 6 */}
-        <div className="w-[416px] h-[513px] ">
-          <div className="">
-            <img src={carimg6} alt="Car 6 card" />
-          </div>
-          <div className="flex flex-row justify-between items center px-4">
-            <div>
-              <p className="font-Sans font-semibold text-[24px]">Porsche</p>
-              <p className="font-Sans text-[16px]">SUV</p>
-            </div>
-            <div>
-              <p className="font-Sans font-semibold text-[24px] text-[#5937E0]">
-                $50
-              </p>
-              <p className="font-Sans text-[16px]">per day</p>
-            </div>
-          </div>
-          <div className="flex flex-row justify-between items-center px-6 py-4">
-            <div className="flex flex-row ">
-              <img src={gearshift} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Automat</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g17} alt="pump" className="w-6" />
-              <p className="font-Sans text-[16px]">PB 15</p>
-            </div>
-            <div className="flex flex-row ">
-              <img src={g1593} alt="gear" className="w-6" />
-              <p className="font-Sans text-[16px]">Air Condition</p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center py-4 px-5">
-            <button className="w-[368px] h-[50px] bg-[#5937E0] rounded text-white font-semibold text-4 ">
-              View Details
-            </button>
-          </div>
-        </div>
+        ))}
       </div>
-    </>
+    </section>
   );
 }
+
 export default Card;
