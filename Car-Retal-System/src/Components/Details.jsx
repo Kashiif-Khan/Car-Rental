@@ -21,8 +21,8 @@ function Details(){
     return(
         <>
         
-        <div className="w-full h-[880px] border border-red-500 flex flex-row justify-center pt-6 gap-24 ">
-            <div className="w-[636px] h-[557px] border border-green-300">
+        <div className="w-full h-[880px]  flex flex-row justify-center pt-6 gap-24 ">
+            <div className="w-[636px] h-[557px] ">
                 <div className="w-[636px] h-[437px]">
                     <div className='p-2'>
                         <p className="flex flex-col"><span className="w-[104px] h-[47px] font-Sans font-bold text-[40px] ">BMW</span>  <span><span className="w-[73px] h-[47px] font-Sans font-semibold text-[40px] text-[#5937E0]  ">$25</span> <span className="w-[40px] h-[19px font-Sana text-4">/ day</span> </span></p>
@@ -37,7 +37,7 @@ function Details(){
                     </div>
                 </div>
             </div>
-            <div className="w-[636px] h-[740px] border border-green-300">
+            <div className="w-[636px] h-[740px] ">
                 <div className='w-[260px] h-[28px]'>
                     <p className='font-Sans font-semibold text-[24px] w-[260px] h-[28px]'>Technical Specification</p>
                 </div>

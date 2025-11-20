@@ -7,17 +7,7 @@ import mycar from '../assets/mycar.jpg'
 import arrowright from '../assets/arrowright.png'
 // car images
 
-// Cards car images
-import carimg1 from '../assets/carimg1.png'
-import carimg2 from '../assets/carimg2.png'
-import carimg3 from '../assets/carimg3.png'
-import carimg4 from '../assets/carimg4.png'
-import carimg5 from '../assets/carimg5.png'
-import carimg6 from '../assets/carimg6.png'
 
-import g17 from '../assets/g17.png'
-import g1593 from '../assets/g1593.png'
-import gearshift from '../assets/gearshift.png'
 // Banner IMages
 import bannerCar from '../assets/bannerCar.png'
 import Group1 from '../assets/Group1.png'
@@ -33,18 +23,19 @@ import iStore from '../assets/iStore.png'
 import phone from '../assets/phone.png'
 
 // 
+import FormComp from './ReusableComponents/FormComp'
 import lastCar from '../assets/lastCar.png'
 import Group2 from '../assets/Group2.png'
-
-import Card from './ReusableComponents/card'
+import Card from './ReusableComponents/Card'
+import { Form } from 'react-router-dom'
 
 function Home(){
 
     return(
         <>
         {/* Hero Section */}
-        <div className='w-full h-[660px] flex justify-center items-center'>
-                    <div className='relative z-0  w-[1460px]  h-[660px]   ml-16  bg-[#5937E0] overflow-hidden rounded'>
+        <div className=' flex justify-center items-center'>
+             <div className='relative z-0      bg-[#5937E0] overflow-hidden rounded'>
             
             <img src={Group} alt="Group"  className='absloute  left-0 top-0 z-20 w-355 '/>
             <img src={blurCar} alt="Car logo" className='absolute z-10 w-[550px] top-[400px] left-[684px] -translate-x-1/2 -translate-y-1/2 rounded'  />
@@ -54,8 +45,9 @@ function Home(){
                 <p className='w-[484px] h-[56px] font-work font-normal text-[16px] leading-[100%] tracking-[0%] text-white'>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper</p>
                 <button className='font-inter font-semibold text-[16px] leading-[100%] tracking-[0%] text-white w-[154px] h-[40px] bg-[#FF9E0C] rounded'>view all cars</button>
             </div>
+            <div className='absolute z-10 right-[100px] top-[150px]'> <FormComp/> </div>
             
-        </div>
+            </div>
         </div>
 
         {/* 2nd section  */}
@@ -83,17 +75,13 @@ function Home(){
                 </p>
             </div>
         </div>
-
         </div>
-
-        {/* 3rd section */}
-        <div className='flex justify-center items-center'>
-            <div className="w-[1440px] h-[669px] flex gap-[110px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[158px]">
+        <div className="w-[1440px] h-[669px] flex gap-[110px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[158px]">
             <div className='w-[550px] h-[449px]'>
                 <img src={mycar} alt="my car" />
             </div>
 
-            <div className='w[550px] space-y-3'> 
+            <div className='w-[550px] space-y-3'> 
                 <div className="w-[550px] h-[94px] opacity-100 rotate-0  space-y-2 ">
                     
                    <h1 className="font-['Work_Sans'] font-semibold text-[20px] leading-[100%] tracking-[0] pt-2">
@@ -135,21 +123,20 @@ function Home(){
 
         </div>
 
-        </div>
+        
 
 
-        {/* 4 section */}
-         
-            <div className="w-full h-[1328px] flex justify-center items-center flex-col gap-[40px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[72px]">
-            <div className="flex justify-between w-[1296px] h-[118px] opacity-100  mb-[24px] px-24 ">
+        <div className="w-[1440px] h-[1328px] flex flex-col justify-center gap-[40px] opacity-100 rotate-0 pt-[60px] pr-[72px] pb-[60px] pl-[72px]">
+            <div className="flex justify-between w-[1296px] h-[118px] opacity-100  mb-[24px]">
                 <p class="font-work font-bold text-[50px] leading-[100%] tracking-[0%] text-black w-120 ">Choose the car that suits you</p>
                 <button className='font-work font-bold text-[20px] flex items-center mt-16'>view all <img src={arrowright} alt="arrow right" className='w-6' /></button>
             </div>
-            
-            <Card/>
-          </div>
-        
-            {/* 5 section */}
+
+                <div className=''>
+                    <Card/>
+                </div>
+            </div>
+
             <div className='w-full h-[535px]  flex justify-center items-center'>
                 <div className='relative w-[1296px] h-[415px] bg-[#5937E0] rounded overflow-hidden '>
                     <img src={Group1} alt="group 1" className='absolute w-165  z-10' />
@@ -259,7 +246,7 @@ function Home(){
 
 
 
-    </>
+        </>
     )
 }
 export default Home
