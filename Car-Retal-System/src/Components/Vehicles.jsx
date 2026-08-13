@@ -1,6 +1,6 @@
 
 import Card from "./ReusableComponents/Card";
-import Logocomp from "./ReusableComponents/Logocomp";
+import Logocomp from "./ReusableComponents/logocomp";
 
 function Vehicles() {
   return (

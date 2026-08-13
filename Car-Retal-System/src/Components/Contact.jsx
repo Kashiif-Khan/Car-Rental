@@ -6,7 +6,7 @@ import mappin from '../assets/mappin.png'
 import Cimage1 from '../assets/Cimage1.png'
 import Cimage2 from '../assets/Cimage2.png'
 import Cimage3 from '../assets/Cimage3.png'
-import Logocomp from '../Components/ReusableComponents/Logocomp'
+import Logocomp from '../Components/ReusableComponents/logocomp'
 import Ctopimage from '../assets/Ctopimage.png'
 import Form from './ReusableComponents/FormComp'
 

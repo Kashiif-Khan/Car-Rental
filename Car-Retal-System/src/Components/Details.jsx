@@ -15,7 +15,7 @@ import arrowright from '../assets/arrowright.png'
 // equipment
 import Frame from '../assets/Frame.png'
 
-import Card  from './ReusableComponents/card.jsx'
+import Card  from './ReusableComponents/Card.jsx'
 
 function Details(){
     return(
