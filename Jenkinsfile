@@ -20,5 +20,13 @@ pipeline {
             }
         }
 
+        stage('Docker Build') {
+            steps {
+                dir('Car-Retal-System') {
+                    sh 'docker build -t car-rental-app .'
+                }
+            }
+        }
+
     }
 }
